@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>lab booking</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div id="mySidenav"
+    class="sidenav">
+    <a href="javascript:void(0)"
+    class="closebtn"
+    onclick="closeNav()">&times;</a>
+    
+
+    <a href="./index.html">HOME</a><br>
+      <br><a href="../login/">LOGIN</a><br>
+      <br><a href="#">LAB</a><br>
+      <br><a href="logout.php">LOGOUT</a><br>
+      <br><a href="./signup/">SIGNUP</a><br>
+
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <script>
+          function openNav()
+          {
+   
+           document.getElementById("mySidenav").style.width="250px";
+   
+   
+          }
+          function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+   }
+   
+        </script>
+
+
+
+
+    <h2>STUDENT LAB BOOKING</h2>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="POST" action="process.php">
+        <div class="txt_field">
+          <input type="text" required name='username'>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required name="password">
+          <span></span>
+          <label>Password</label>
+        
+        </div>
+       
+        <input type="submit" value="Login" name="login">
+      </form>
+        <p class="signup_link">Don't have an account ? <a href="signup.html">Sign up here</a></p>
+         
+        </div>
+
+
+       
+      </form>
+    </div>
+
+  </body>
+</html>

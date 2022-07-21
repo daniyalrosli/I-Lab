@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>feedback</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="mySidenav"
+    class="sidenav">
+    <a href="javascript:void(0)"
+    class="closebtn"
+    onclick="closeNav()">&times;</a>
+
+
+    <a href="index.html">HOME</a>
+    <a href="../user/">MANAGE ACCOUNT</a>
+    <a href="../user/labcom.php">COMPUTER LAB</a>
+    <a href="../user/booking.php">BOOKING</a>
+    <a href="../user/bookinghis.php">BOOKING HISTORY</a>
+    <a href="../feedback">FEEDBACK</a>
+    <a href="../login">LOGOUT</a>
+    
+
+    
+  </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+     <script>
+       function openNav()
+       {
+
+        document.getElementById("mySidenav").style.width="250px";
+
+
+       }
+       function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+     </script>
+
+
+
+<div class="container">
+
+    
+        <div class="center">
+          <form method="post" action="feedback.php">
+            <h1>FEEDBACK</h1>
+            <form method="post">
+              <div class="txt_field">
+                <input type="text" name="name" required>
+                <span></span>
+                <label>name</label>
+              </div>
+              <div class="txt_field">
+                <input type="email" name="email"required>
+                <span></span>
+                <label>email</label>
+              </div>
+              <div class="txt_field">
+                <input type="text" name="telephone"required>
+                <span></span>
+                <label>phone no</label>
+                </div>
+                <div class="select">
+                  <label for="report">Rating</label>
+                  <select id="report" name="report">
+                    <option value="good">Good</option>
+                    <option value="bad">Bad</option>
+                    </select>
+
+                
+              </div>
+
+              <tr> 
+                <td colspan="1">
+                 
+                  <input type="submit" name="submit" value="submit">
+                  
+                  
+                </td>
+              </tr>
+             
+             
+
+                
+               
+              </div>
+            </form>
+          <tr> 
+            
+            
+          </tr>
+          
+        </table>
+    </form>
+    
+    </fieldset><br>
+     
+    </div>
